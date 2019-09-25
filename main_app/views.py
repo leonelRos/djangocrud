@@ -8,9 +8,6 @@ def home(request):
     wishes = Wish.objects.all()
     return render(request, 'index.html', {'wishes': wishes})
 
-# def add(request):
-#     wishes = Wish.objects.all()
-#     return render(request, 'add.html', {'wishes': wishes})
 
 class Add_Wish(CreateView):
   model = Wish
